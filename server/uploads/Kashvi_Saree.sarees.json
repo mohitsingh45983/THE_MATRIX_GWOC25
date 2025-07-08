@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "67a8a44e6a86dfc4139bc77e"
+  },
+  "name": "banasskj dhsj fhskjs fh",
+  "description": " hio soi fhsio fhih ",
+  "price": 37467,
+  "fabric": "Silk",
+  "category": "Banarasi",
+  "workType": "Zari",
+  "occasion": "Casual",
+  "color": "gold",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739105362/sarees/hnuu0fnnbfjoujnka1ve.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739105362/sarees/m6ebszpi9cts2jjh0um3.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739105362/sarees/iqttwjdwgookkbgbdadf.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739105362/sarees/t3edc97lzzeaycjf0stg.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a8d1e900ff2ae4bc86dfe1"
+  },
+  "name": "Banarasi Silk Saree",
+  "description": "Elegant Banarasi silk saree with intricate golden zari work.",
+  "price": 8999,
+  "fabric": "Silk",
+  "category": "Banarasi",
+  "workType": "Zari",
+  "occasion": "Casual",
+  "color": "blue and orange",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117031/sarees/owf8vnvetuzndpp2l9qd.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117031/sarees/fdobpezufyvhsyfrtnps.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117032/sarees/fccrcrucieuixdq9sj89.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117032/sarees/cnfnc3c9nhslmiceipbp.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a8d23700ff2ae4bc86dfe3"
+  },
+  "name": "Kanjivaram Silk Saree",
+  "description": "Authentic Kanjivaram silk saree with vibrant colors and heavy borders.",
+  "price": 5999,
+  "fabric": "Net",
+  "category": "Banarasi",
+  "workType": "Zari",
+  "occasion": "Wedding",
+  "color": "pink",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117109/sarees/thrreeml61a5lf5pq8sk.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117109/sarees/x4xy3zfolq2zrqmibprz.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117108/sarees/gpgp5lwj1rgruejpnpxa.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117109/sarees/ztqtyquft2n1amzptgub.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a8d2d900ff2ae4bc86dfeb"
+  },
+  "name": "Cotton Handloom Saree",
+  "description": "Cotton Handloom SareeCotton Handloom SareeCotton Handloom Saree",
+  "price": 11899,
+  "fabric": "Cotton",
+  "category": "Handloom",
+  "workType": "Embroidery",
+  "occasion": "Casual",
+  "color": "red and pink",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117266/sarees/jzqih98nuiygnmtnklsa.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117262/sarees/ohwq7hnembreujprtlrh.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117263/sarees/rebw3xdcx8z4kw7nwti1.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739117271/sarees/vezygzffjrqmqzzgokth.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a8d5c800ff2ae4bc86e007"
+  },
+  "name": "Designer Net Saree ",
+  "description": "Designer Net Saree Designer Net Saree Designer Net Saree Designer Net SareeDesigner Net Saree ",
+  "price": 2999,
+  "fabric": "Net",
+  "category": "Silk",
+  "workType": "Zari",
+  "occasion": "Casual",
+  "color": "white",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118015/sarees/ynfyvpk9luzcmkkksnqr.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118023/sarees/so2twl1figmpsatwqwgb.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118017/sarees/bbjtwnxujpx3xp8jr3et.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118016/sarees/mkzli08nleqyfsssejvm.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a8d64700ff2ae4bc86e00b"
+  },
+  "name": "Paithani Silk Saree",
+  "description": "Paithani Silk Saree\" Paithani Silk Saree\" Paithani Silk Saree\"Paithani Silk Saree\"",
+  "price": 79998,
+  "fabric": "Net",
+  "category": "Handloom",
+  "workType": "Zari",
+  "occasion": "Casual",
+  "color": "orange",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118140/sarees/gwujv1anwmnmea0czpxl.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118147/sarees/wehnvwobe779mrfeoyvz.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118150/sarees/alg36uajh7mchofhhm0u.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739118149/sarees/zh8ds14ruvbyw2vsguxe.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67aa41b7ff25b0dfbff53f24"
+  },
+  "name": "Greyish Blue Sequence Drape Style Frill Sharara With V Neck Blouse",
+  "description": "Greyish Blue Sequence Drape Style Frill Sharara With V Neck Blouse Greyish Blue Sequence Drape Style Frill Sharara With V Neck Blouse Greyish Blue Sequence Drape Style Frill Sharara With V Neck Blouse Greyish Blue Sequence Drape Style Frill Sharara With V Neck Blouse",
+  "price": 45000,
+  "fabric": "Silk",
+  "category": "Banarasi",
+  "workType": "Zari",
+  "occasion": "Casual",
+  "color": "white and gold",
+  "stock": 1,
+  "images": [
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739211190/sarees/mvomg8bqhgfra3rfrdfv.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739211189/sarees/vuwtvuwwib3cvumk1qlo.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739211190/sarees/tltxlbeux1b2jul8it9v.jpg",
+    "https://res.cloudinary.com/dez41esfq/image/upload/v1739211190/sarees/xspxelimntm86mvswsuq.jpg"
+  ],
+  "ratings": 0,
+  "reviews": [],
+  "featured": true,
+  "__v": 0
+}]

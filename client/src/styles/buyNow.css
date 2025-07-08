@@ -1,0 +1,199 @@
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 20px 15px !important;
+}
+
+.checkout-card {
+  background: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.checkout-summary {
+  margin-left: 50px;
+  align-items: start !important;
+  background-color: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  box-shadow: 10px 2px 10px rgba(0, 0, 0, 1);
+  padding: 20px;
+  width: 380px;
+  height: auto;
+  font-size: 13px;
+}
+
+.main-text-options {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  border-bottom: none;
+}
+
+.new-address-add {
+  font-size: larger;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.review-item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 0;
+}
+
+.review-img-thumbnail {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.review-item-details {
+  flex: 1;
+}
+
+.payment-method-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Remove radio buttons but keep functionality */
+.payment-method-item input[type="radio"] {
+  display: none;
+}
+
+.payment-method-item.selected-payment {
+  border-color: #000;
+  background-color: #f8f8f8;
+}
+
+.selected-btn {
+  font-size: 12px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.selected-btn:hover {
+  border: 1px solid rgb(61, 61, 61);
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    width: 100%;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .checkout-summary {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-item {
+    flex-direction: column;
+  }
+
+  .review-img-thumbnail {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .checkout-card,
+  .checkout-summary {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw !important;
+  }
+  .main-text-options {
+    font-size: 16px;
+  }
+
+  .payment-method-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Remove default styles */
+input[type="radio"] {
+  appearance: none; /* Removes default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black; /* Black border */
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+/* When checked, make the inner circle black */
+input[type="radio"]:checked {
+  background-color: black; /* Completely black when selected */
+  border: 1px solid black;
+}
+
+/* Remove focus effect */
+input[type="radio"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Make the entire div clickable */
+.payment-method-item,
+.address-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Highlight the selected option */
+.payment-method-item.selected-payment,
+.address-item.selected-address {
+  border-color: black;
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .buynow-code-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

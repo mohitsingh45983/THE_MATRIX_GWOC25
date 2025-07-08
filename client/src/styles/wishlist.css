@@ -1,0 +1,183 @@
+/* Wishlist Page Container */
+.wishlist-container {
+  /* Adds spacing inside the container */
+  margin: 0; /* Centers the content */
+  max-width: 100vw; /* Ensures content doesn't touch screen edges */
+  display: flex;
+  flex-direction: column; /* Aligns title and grid properly */
+  align-items: left; /* Centers all content */
+}
+
+/* Wishlist Title */
+.wishlist-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 18px;
+  margin-bottom: 30px;
+  gap: 10px; /* Space between text and count */
+  color: #333;
+  width: 100%;
+}
+
+/* Wishlist Count */
+.wishlist-count {
+  color: #666;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* Wishlist Grid */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Exactly 5 items per row */
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+/* Individual Wishlist Item */
+.wishlist-item {
+  position: relative;
+  background: white;
+  padding: 0px;
+  text-align: left;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px; /* Adjusted for better visibility */
+}
+
+.btn-container {
+  padding-top: 0 !important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 48px; /* Adjusted for better visibility */
+}
+
+/* Image Fix */
+.wishlist-item img {
+  object-fit: cover; /* Ensures the image fills the box */
+  object-position: top; /* Centers the image */
+  width: 100%;
+  height: 100%; /* Adjusts height to fit container */
+}
+
+/* Close (Remove) Button */
+.close-btn {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  z-index: 10; /* Ensures it stays above the image */
+}
+
+.close-btn:hover {
+  background: none;
+}
+
+/* Buy Now Button Over Image */
+.buy-now-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.buy-now-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* Product Name */
+.wishlist-item-name {
+  text-align: start;
+  font-size: 13px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px !important;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Product Price */
+.wishlist-item-price {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px !important;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Ready to Ship Badge */
+.ready-to-ship {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  background: #d8e3d3;
+  padding: 3px 10px;
+  gap: 5px;
+  width: auto; /* Ensures it takes only necessary space */
+  display: inline-flex; /* Makes sure it fits content and stays aligned */
+  justify-content: flex-start; /* Aligns text inside */
+  align-items: center; /* Centers content vertically */
+  text-align: left; /* Ensures text alignment */
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row */
+  }
+}
+
+.empty-wishlist {
+  margin-top: 70px;
+  
+}

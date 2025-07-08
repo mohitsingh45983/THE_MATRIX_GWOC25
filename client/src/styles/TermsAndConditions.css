@@ -1,0 +1,120 @@
+.terms-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.terms-title {
+  font-size: 1.3rem !important;
+  margin-bottom: 0.5rem;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.terms-subtitle {
+  font-size: 1rem;
+  color: #888888;
+}
+
+.terms-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.terms-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  color: #5a5a5a;
+}
+
+.terms-paragraph {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #878787;
+  line-height: 1.6;
+}
+
+.terms-list {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.terms-contact {
+  font-style: italic;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #4c4c4c;
+}
+
+.terms-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #9d9d9d;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile screens (up to 600px wide) */
+@media (max-width: 600px) {
+  .terms-wrapper {
+    padding: 1rem;
+  }
+
+  .terms-title {
+    font-size: 2rem;
+  }
+
+  .terms-section {
+    padding: 1rem;
+  }
+
+  .terms-section-title {
+    font-size: 1.2rem;
+  }
+
+  .terms-paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet screens (600px to 1024px wide) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .terms-wrapper {
+    padding: 1.5rem;
+  }
+
+  .terms-title {
+    font-size: 2.2rem;
+  }
+
+  .terms-section {
+    padding: 1.25rem;
+  }
+
+  .terms-section-title {
+    font-size: 1.3rem;
+  }
+}

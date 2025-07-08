@@ -1,0 +1,59 @@
+#root {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+@media (prefers-col-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #222;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.print-invoice-btn-all {
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  background-color: transparent;
+}
+
+/* Ensure this is in your App.css or a CSS file that's imported globally */
+.modal-backdrop.show {
+  -webkit-backdrop-filter: blur(16px) !important;
+  backdrop-filter: blur(16px) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}

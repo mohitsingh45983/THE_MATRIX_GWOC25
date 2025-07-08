@@ -1,0 +1,67 @@
+/* Flash Modal Container with Blurred Overlay */
+/* FLASH CONTAINER (Full-Screen Overlay) */
+.flash-container {
+  position: fixed;
+  /* inset: 0 is shorthand for top:0; right:0; bottom:0; left:0; */
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Slightly dark overlay + blur */
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+
+  /* Layer on top of everything */
+  z-index: 9999;
+
+  /* Start hidden */
+  opacity: 0;
+  pointer-events: none;
+
+  /* Fade transition for container visibility */
+  transition: opacity 0.4s ease;
+}
+
+/* When visible, the container becomes interactive and fades in */
+.flash-container.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* FLASH MODAL (The Card) */
+.flash-modal {
+  /* Card-like styling */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px 60px;
+  width: 500px !important;
+  max-width: 500px !important;
+  text-align: center;
+
+  /* Scale in slightly */
+  transform: scale(0.95);
+  transition: transform 0.4s ease;
+}
+
+/* When the container is visible, the modal scales to normal size */
+.flash-container.visible .flash-modal {
+  transform: scale(1);
+}
+
+/* FLASH ICON (Your Large SVG) */
+.flash-icon {
+  width: 150px !important; /* Adjust as desired */
+  height: auto;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+/* FLASH TEXT (Message) */
+.flash-text {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 500 !important;
+  color: #333;
+}

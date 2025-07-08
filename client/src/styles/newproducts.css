@@ -1,0 +1,112 @@
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100vw;
+  padding: 0 1.25rem; /* 20px -> 1.25rem */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Ensures 5 products per row */
+  gap: 1.25rem; /* 20px -> 1.25rem */
+  justify-content: center;
+  padding: 0 3rem;
+  max-width: 85rem;
+}
+
+/* Product Card */
+.product-card {
+  text-align: center;
+  width: 260px !important; /* Ensures full width within the grid */
+}
+
+/* Image Styling */
+.new-product-img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  max-height: 22rem; /* Adjust height to avoid excessive stretching */
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Title */
+.product-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 0.625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Enable slider for <=1400px */
+@media (max-width: 1400px) {
+  .product-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .product-card {
+    width: 16rem !important; /* Fixed width for scrolling */
+    flex-shrink: 0;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+    gap: 0.55rem;
+    padding: 0 1.5rem;
+  }
+
+  .product-card {
+    width: 14rem !important;
+  }
+
+  .new-product-img {
+    max-height: 18rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 products per row */
+    padding: 0 1rem;
+    gap: 0.7rem;
+  }
+
+  .product-card {
+    width: 12rem !important;
+  }
+
+  .new-product-img {
+    max-height: 16rem;
+  }
+}
+
+/* Smallest Mobile View */
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 product per row */
+    padding: 0 0.5rem;
+    gap: 0.7rem;
+  }
+
+  .product-card {
+    width: 10rem !important;
+  }
+
+  .new-product-img {
+    max-height: 14rem;
+  }
+
+  .product-title {
+    font-size: 0.875rem;
+  }
+}

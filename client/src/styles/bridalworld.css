@@ -1,0 +1,117 @@
+/* Container */
+.bridal-container {
+  position: relative;
+  width: calc(100% - 45px); /* 50px margin from left and right */
+  height: 550px;
+  margin: 0 auto; /* Centers the container */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Image */
+.bridal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Overlay Text */
+.bridal-text {
+  position: absolute;
+  top: 33%;
+  left: 100px; /* 50px from the left */
+  max-width: calc(100% - 45px); /* Ensures content doesn't exceed 50px margin */
+  color: black;
+  text-align: left;
+  font-family: serif;
+  padding: 20px;
+}
+
+/* Title */
+.bridal-text h1 {
+  font-size: 35px;
+  font-weight: 500 !important;
+  margin-bottom: 3px;
+}
+
+/* Subtitle */
+.bridal-text p {
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+/* Shop Now Button */
+.bridal-shop-now-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 30px;
+  color: white;
+  background: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 50px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* Hover Effect */
+.bridal-shop-now-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .bridal-container {
+    width: calc(100% - 60px); /* Reduce margins */
+  }
+
+  .bridal-text {
+    left: 30px;
+    max-width: calc(100% - 60px);
+  }
+
+  .bridal-text h1 {
+    font-size: 30px;
+  }
+
+  .bridal-text p {
+    font-size: 16px;
+  }
+
+  .bridal-shop-now-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bridal-container {
+    width: calc(100% - 40px); /* Reduce margins further */
+  }
+
+  .bridal-text {
+    left: 20px;
+    max-width: calc(100% - 40px);
+    padding: 15px;
+  }
+
+  .bridal-text h1 {
+    font-size: 28px;
+  }
+
+  .bridal-text p {
+    font-size: 14px;
+  }
+
+  .bridal-shop-now-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,253 @@
+.orders-container-yash {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order-card-yash {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  gap: 20px;
+  transition: 0.3s;
+  color: #374151;
+  transition: 0.5s ease;
+
+  border: 1px solid #c5c4c4;
+}
+
+.saree-id-img {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: small;
+}
+
+.saree-id-admin {
+  position: relative;
+  bottom: 0;
+  background-color: white;
+}
+
+.order-image {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  max-width: 200px;
+}
+
+.order-images img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.order-image img {
+  width: 60px;
+  height: auto;
+}
+
+.order-details {
+  font-size: 15px;
+  color: #333;
+}
+
+.order-items {
+  max-width: 250px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.additional-products {
+  cursor: pointer;
+  color: #007bff;
+  font-style: italic;
+}
+.order-address {
+  max-width: 250px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #4b5563;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-summary {
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.order-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-status-dropdown {
+  padding: 8px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.order-status-dropdown:hover {
+  border-color: #007bff;
+}
+
+/* Status Buttons */
+.status-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Confirm Order */
+.status-btn.confirm {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.status-btn.confirm:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Pack Order */
+.status-btn.pack {
+  background-color: #ff9800;
+  color: white;
+}
+
+.status-btn.pack:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+/* Ship Order */
+.status-btn.ship {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.status-btn.ship:hover {
+  background-color: #138496;
+  transform: scale(1.05);
+}
+
+/* Deliver Order */
+.status-btn.deliver {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-btn.deliver:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Delivered Status */
+.delivered-status {
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media ((min-width: 898px) and (max-width: 1108px)) {
+  .print-invoice-btn-all {
+    right: 10%;
+    bottom: 10%;
+  }
+  .status-btn.confirm {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-card-yash {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .order-image img {
+    width: 50px;
+  }
+
+  .order-status {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .order-status-dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .status-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-card-yash {
+    padding: 15px;
+  }
+
+  .order-details {
+    font-size: 14px;
+  }
+
+  .order-items {
+    font-size: 14px;
+  }
+
+  .order-status {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .status-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+.print-invoice-btn-all {
+  position: relative;
+  bottom: 0;
+}

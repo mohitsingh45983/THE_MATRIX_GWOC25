@@ -1,0 +1,289 @@
+.add-product-container {
+  margin: auto;
+  max-width: 700px;
+  padding: 50px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.1);
+}
+.upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: max-content;
+}
+
+.upload-section-yash {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.hide-original {
+  display: none;
+}
+
+.upload-box-yash {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  display: flex;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box-yash svg {
+  position: relative;
+  left: 30%;
+  top: 30%;
+  font-size: 28px;
+  color: #888;
+  margin: auto;
+}
+
+.image-preview {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.upload-box-yash:hover {
+  border-color: #dcdcdc;
+  background: #dcdcdc;
+}
+
+/* Input Fields */
+.add-product-container label {
+  font-weight: 400;
+  color: #4b5563;
+  display: block;
+  text-align: left;
+}
+
+.add-product-container input,
+.add-product-container textarea,
+.add-product-container select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+  outline: none;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+
+.add-product-container textarea {
+  resize: none;
+  height: 80px;
+}
+
+.add-product-container input:focus,
+.add-product-container textarea:focus,
+.add-product-container select:focus {
+  border-color: #000000;
+}
+
+/* Category & Price Section */
+.product-details-yash-svnit {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.product-details-yash-svnit select,
+.product-details-yash-svnit input {
+  flex: 1;
+}
+
+/* Bestseller Checkbox */
+.featured-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.featured-checkbox input {
+  width: auto;
+}
+
+/* Add Button */
+
+.btn-div {
+  display: flex;
+}
+
+.add-product-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  /* cursor: pointer; */
+  transition: 0.3s;
+  text-align: left;
+}
+
+.add-product-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6; /* Optional: Makes the button look disabled */
+}
+
+.message-succ-fail {
+  margin-top: 40px !important;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-product-btn:hover {
+  background: #333;
+}
+
+@media (max-width: 1024px) {
+  .add-product-container {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .upload-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .add-product-container input,
+  .add-product-container textarea,
+  .add-product-container select {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-product-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .upload-section {
+    flex-wrap: wrap;
+  }
+
+  .upload-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-details-yash {
+    flex-direction: column;
+  }
+
+  .size-selection {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .size-option {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .bestseller-checkbox {
+    font-size: 14px;
+  }
+
+  .add-product-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/*keeping user intact*/
+
+.progress-bar-container {
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 8px;
+  margin-top: 30px !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2f2f2f, #000000);
+  transition: width 0.3s ease-in-out;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #000000;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.success-animation {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.image-warning {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.image-warning::before {
+  content: "⚠️ ";
+  margin-right: 5px;
+}
+
+.uploading-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  animation: fadeBlink 1.5s infinite;
+}
+
+@keyframes fadeBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 425px) {
+  .upload-section-yash {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+  }
+}

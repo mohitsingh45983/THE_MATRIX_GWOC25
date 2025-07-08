@@ -1,0 +1,113 @@
+/* General Styles */
+.order-details-container-admin {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.order-details-container-admin h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Customer Info */
+.customer-info-admin {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.customer-info-admin h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.customer-info-admin p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.products-admin {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.products-admin h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product-grid-admin {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-card-admin {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-card-admin img {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.product-card-admin p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-card-admin p strong {
+  color: #333;
+}
+
+/* Order Summary */
+.order-summary-admin {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.order-summary-admin p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.order-summary-admin p strong {
+  color: #333;
+}
+
+.print-invoice-btn-all-mohit {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  margin-top: 15px;
+  padding: 5px 20px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+}

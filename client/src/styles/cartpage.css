@@ -1,0 +1,183 @@
+.cart-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.cart-row {
+  height: auto;
+  width: 100vw !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.cart-item {
+  background-color: white;
+  padding: 5px;
+}
+
+/* Default cart image styling */
+.cart-image {
+  width: 120px; /* Default width for larger screens */
+  height: auto; /* Dynamic height to maintain aspect ratio */
+  max-height: 150px; /* Limits the height for consistency */
+  object-fit: cover; /* Fills the container without distortion */
+  object-position: top; /* Aligns the image to the top, cropping the bottom if needed */
+}
+
+.empty-cart-div {
+  align-items: center;
+  width: 100vw !important;
+}
+
+.cart-summary {
+  margin-left: 50px;
+  align-items: start !important;
+  background-color: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  box-shadow: 10px 2px 10px rgba(0, 0, 0, 1);
+  padding: 20px;
+  width: 380px;
+  height: auto;
+  font-size: 13px;
+}
+
+.btn-outline-dark {
+  transition: all 0.3s ease-in-out !important; /* Smooth transition effect */
+}
+
+.btn-dark {
+  border-radius: 6px;
+}
+
+.login-div {
+  padding: 7px;
+  background-color: rgb(255, 232, 212);
+}
+
+.login-div a {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.code-btn,
+.proceed-btn {
+  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.code-btn:hover,
+.proceed-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  outline: 1px solid rgb(215, 215, 215) !important;
+  border: solid 1px;
+}
+
+/* RESPONSIVENESS - Mobile & Tablet (<=1024px) */
+@media (max-width: 1024px) {
+  /* Adjust overall container */
+  .cart-row {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Force both sections to take full width */
+  .cart-row > [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Ensure Cart Products section takes full width */
+  .col-md-8 {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Order Summary takes full width */
+  .col-md-4 {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .cart-summary {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  /* Ensure input and button stretch fully */
+  .cart-summary input.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cart-summary button.btn-dark {
+    width: 100%;
+  }
+
+  /* Fix for uniform height in the Gift Card form (input & button) */
+  .cart-summary .d-flex input.form-control,
+  .cart-summary .d-flex button.btn-dark {
+    height: 40px !important;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 10px; /* Adds space between image and text */
+  }
+
+  .cart-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+  }
+
+  .cart-item-details {
+    text-align: left; /* Ensures text stays left-aligned */
+    flex-grow: 1; /* Allows text to take up remaining space */
+  }
+}
+
+/* Small image size for mobile screens */
+@media (max-width: 768px) {
+  .cart-image {
+    width: 100px; /* Keep the same width as 1024px */
+    max-height: 120px; /* Keep the same height as 1024px */
+  }
+
+  /* Move product price below title */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-title {
+    order: 1; /* Ensures title comes first */
+  }
+
+  .product-price {
+    order: 2;
+    margin-top: 5px; /* Adds some spacing */
+    display: block; /* Forces price to move below */
+    width: 100%;
+  }
+}
+
+/* Further size reduction for very small screens (≤433px) */
+@media (max-width: 433px) {
+  .cart-image {
+    width: 80px; /* Further reduced width */
+    max-height: 100px; /* Keeps images smaller and proportional */
+  }
+}

@@ -1,0 +1,118 @@
+/* Fullscreen Overlay */
+.success-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Success Container */
+.success-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: scale(0.8);
+  animation: popIn 0.5s forwards;
+}
+
+/* Checkmark */
+.checkmark {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: drawCircle 0.5s ease-out forwards;
+}
+
+.checkmark-stem {
+  width: 5px;
+  height: 30px;
+  background: green;
+  position: absolute;
+  top: 20px;
+  left: 37px;
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: drawStem 0.4s ease-out 0.5s forwards;
+}
+
+.checkmark-kick {
+  width: 5px;
+  height: 15px;
+  background: green;
+  position: absolute;
+  top: 45px;
+  left: 27px;
+  transform: rotate(-45deg);
+  opacity: 0;
+  animation: drawKick 0.4s ease-out 0.7s forwards;
+}
+
+/* Button */
+.success-btn {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.success-btn:hover {
+  background: darkgreen;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCircle {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drawStem {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drawKick {
+  to {
+    opacity: 1;
+  }
+}

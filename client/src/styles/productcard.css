@@ -1,0 +1,86 @@
+.product-card {
+  position: relative;
+  width: 245px; /* Adjust width */
+  border-radius: 0; /* Ensure rectangular shape */
+  overflow: hidden;
+  text-align: start;
+  margin-top: 30px; /* Reduced top margin */
+}
+
+/* Product Image */
+.product-img {
+  width: 100%;
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the container */
+  object-position: top; /* Aligns the image to the bottom, cropping the top if needed */
+  display: block;
+}
+
+/* Wishlist Icon */
+.wishlist-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: rgb(230, 230, 230);
+  border-radius: 50%;
+}
+
+/* Product Details */
+/* Product Name */
+.wishlist-item-name-card {
+  font-size: 13px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px !important;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Product Price */
+.wishlist-item-price {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px !important;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Ready to Ship Badge */
+.ready-to-ship {
+  font-size: 10px;
+  font-weight: 400;
+  color: black;
+  background: #d8e3d3;
+  padding: 3px 10px;
+  gap: 5px;
+  width: auto; /* Ensures it takes only necessary space */
+  display: inline-flex; /* Makes sure it fits content and stays aligned */
+  justify-content: flex-start; /* Aligns text inside */
+  align-items: center; /* Centers content vertically */
+  text-align: left; /* Ensures text alignment */
+  margin-top: 5px;
+}
+
+/* Reduce space between cards on mobile */
+@media (max-width: 768px) {
+  .product-card {
+    margin-top: 10px;
+  }
+}
+
+.product-card-filter {
+  position: relative;
+  width: 240px !important;
+  border-radius: 0; /* Ensure rectangular shape */
+  overflow: hidden;
+  text-align: start;
+  margin-top: 20px; /* Reduced top margin */
+}

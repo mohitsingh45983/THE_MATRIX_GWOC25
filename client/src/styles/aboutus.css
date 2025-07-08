@@ -1,0 +1,146 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000000;
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 1rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.company-info,
+.vision,
+.mission {
+  background-color: #fff;
+  padding: 0 2rem;
+  margin-bottom: 0;
+
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.company-name {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 0.5rem;
+}
+
+.company-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  flex-basis: calc(33.333% - 2rem);
+  background-color: #fff;
+  padding: 1.5rem;
+
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    flex-basis: 100%;
+  }
+}
+
+/* Traditional Indian-inspired decorative elements */
+
+.company-info::before,
+.vision::before,
+.mission::before {
+  content: "❁";
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: #3b3b3b;
+  margin-bottom: 1rem;
+}
+
+/* Add this to your existing CSS file or create a new one */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+}
+
+/* h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+} */
+
+.text-start {
+  text-align: left;
+}

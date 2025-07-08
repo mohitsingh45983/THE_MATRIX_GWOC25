@@ -1,0 +1,23 @@
+{
+  "headers": [
+    {
+      "source": "/(.*).(css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|otf|ico|eot|ttf|otf|mp4|webm|ogg|webp|avif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
